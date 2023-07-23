@@ -15,7 +15,6 @@ declare global {
     }
 }
 
-// eslint-disable-next-line
 Promise.prototype.unwrap = async function <T>(
     ...args: any
 ) {
@@ -33,7 +32,7 @@ Promise.prototype.unwrap = async function <T>(
         error: err,
     };
 };
-// eslint-disable-next-line
+
 Promise.unwrap = async function <T>(promise: Promise<T>) {
     let res = undefined;
     let err = undefined;
